@@ -1,51 +1,32 @@
 <template>
   <v-app>
-    <v-app-bar app color="deep-purple">
+    <v-app-bar
+      app
+      dark
+      color="deep-purple accent-3"
+      elevation="20"
+      src="https://i.picsum.photos/id/220/1920/1080.jpg?hmac=jSW8ORCAXnLjyQRq4vl3nBiTXuTMiTg6nsaDRvR7GXE"
+      fade-img-on-scroll
+      scroll-target="#scrolling-techniques-3"
+    >
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Home</span>
-      </v-btn>
+      <div class="d-flex" justify="center">
+        <router-link to="/" tag="button" class="mr-3">HOME</router-link>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Projects</span>
-      </v-btn>
+        <router-link to="/projects" tag="button" class="mr-3"
+          >PROJECTS</router-link
+        >
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Contact </span>
-      </v-btn>
+        <router-link to="/projects" tag="button">CONTACT</router-link>
+      </div>
     </v-app-bar>
-
-    <v-main>
-      <AboutMe />
-    </v-main>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import AboutMe from "./components/AboutMe";
-
 export default {
   name: "App",
-
-  components: {
-    AboutMe,
-  },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
