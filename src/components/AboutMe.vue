@@ -10,16 +10,8 @@
 
     <v-row justify="center">
       <v-img
-        :src="require('../assets/montreal.jpg')"
-        class="my-3 mr-3 portrait"
-      />
-      <v-img
         :src="require('../assets/munich.jpg')"
         class="my-3 mr-3 portrait"
-      />
-      <v-img
-        :src="require('../assets/neuschwanstein.jpg')"
-        class="my-3 portrait"
       />
     </v-row>
 
