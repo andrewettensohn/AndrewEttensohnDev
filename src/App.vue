@@ -3,11 +3,8 @@
     <v-app-bar
       app
       dark
-      color="deep-purple accent-3"
       elevation="20"
-      src="https://i.picsum.photos/id/220/1920/1080.jpg?hmac=jSW8ORCAXnLjyQRq4vl3nBiTXuTMiTg6nsaDRvR7GXE"
-      fade-img-on-scroll
-      scroll-target="#scrolling-techniques-3"
+      src="https://i.picsum.photos/id/1040/4496/3000.jpg?hmac=kvZONlBpTcZ16PuE_g2RWxlicQ5JKVq2lqqZndfafBY"
     >
       <v-spacer></v-spacer>
 
@@ -17,8 +14,6 @@
         <router-link to="/projects" tag="button" class="mr-3"
           >PROJECTS</router-link
         >
-
-        <router-link to="/projects" tag="button">CONTACT</router-link>
       </div>
     </v-app-bar>
     <router-view></router-view>
