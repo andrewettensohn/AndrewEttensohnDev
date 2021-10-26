@@ -60,12 +60,12 @@ export default {
       {
         heading: "Where I've Been",
         description:
-          "Publix Super Markets is the only company I've ever worked for. I started at Publix as a retail associate in the store, mainly working in the grocery department while attending Polk State College for Bussiness IT. At PSC I had classes in Java, web development, and database design. I finished up my degree working at Publix's Information Systems help desk where I had the chance to write some scripts in PowerShell that made my job easier. In 2019 I moved over to development as a SQA analyst, mainly focusing on automated testing using C#, Selenium, Appium, and Publix's inital automated API testing framework while working on a scrum team. In 2020 I became a full-stack developer and have designed and coded multiple features using .NET.",
+          "Publix Super Markets is the only company I've ever worked for. I started at Publix as a retail associate in the store, mainly working in the grocery department while attending Polk State College for Bussiness IT. At PSC I had classes in Java, web development, and database design. I finished up my degree working at Publix's Information Systems help desk where I had the chance to write some scripts in PowerShell that made my job easier. In 2019 I moved over to development as a SQA analyst, mainly focusing on automated testing using C#, Selenium, Appium, and Publix's inital automated API testing framework while working on a scrum team. In 2020 I became a full-stack developer and have designed and coded multiple features using .NET in Publix's inventory system.",
       },
       {
         heading: "What I'm Up To",
         description:
-          "As much as I love .NET, I'm currently trying to learn other programming languages and frameworks. I hope to become proficent in Vue.js and Kotlin and use my skills to make some great apps that don't use .NET like this site.",
+          "I'm always working with .NET doing Xamarin, ASP.NET Core, Blazor, and now Unity. I'm also interested in JavaScript frameworks like React and Vue.",
       },
     ],
   }),
