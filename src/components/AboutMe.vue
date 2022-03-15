@@ -65,7 +65,7 @@ export default {
       {
         heading: "What I'm Up To",
         description:
-          "I'm always making a new API with the latest version of .NET or making a companion app for a game I'm playing. I've also been working on making video 2D games with Unity. I've been working on a decent sized game for several months and plan to do a blog about it on this site (coming later in 2022 hopefully).",
+          "I'm always making a new API with the latest version of .NET or making a companion app for a game I'm playing. I've also been working on making 2D games with Unity. I've been working on a decent sized game for several months and plan to do a blog about it on this site (coming later in 2022 hopefully).",
       },
     ],
   }),
