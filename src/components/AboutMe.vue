@@ -4,9 +4,15 @@
       <v-col>
         <h2 class="headline font-weight-bold mb-3">Welcome to my Portfolio!</h2>
         <h1 class="display-1">Andrew Ettensohn</h1>
-        <p>Full Stack Developer</p>
+        <p>Full Stack Developer/Game Dev</p>
       </v-col>
     </v-row>
+
+        <v-row justify="center">
+          <v-btn elevation="2">
+              <router-link to="/projects" tag="button" class="mr-3">See My Projects Here!</router-link>
+          </v-btn>
+      </v-row>
 
     <v-row justify="center">
       <v-img
@@ -29,6 +35,12 @@
 
     <v-row justify="start">
       <v-col class="mb-4" cols="12" md="8">
+          <iframe frameborder="0" src="https://itch.io/embed/1686671" width="552" height="167"><a href="https://andrewettensohn.itch.io/fell-deeds">Fell Deeds by Fell Games</a></iframe>
+      </v-col>
+    </v-row>
+
+    <v-row justify="start">
+      <v-col class="mb-4" cols="12" md="8">
         <a
           class="mr-3"
           href="https://www.linkedin.com/in/andrew-ettensohn-685721187"
@@ -42,6 +54,7 @@
         </a>
       </v-col>
     </v-row>
+
   </v-container>
 </template>
 
@@ -60,12 +73,12 @@ export default {
       {
         heading: "Where I've Been",
         description:
-          "I started at Publix as a retail associate in the store, mainly working in the grocery department while attending Polk State College for Bussiness IT. At PSC I had classes in Java, web development, and database design. I finished up my degree working at Publix's Information Systems help desk where I had the chance to write some scripts in PowerShell that made my job easier. In 2019 I moved over to development as a SQA analyst, mainly focusing on automated testing using C#, Selenium, Appium, and Publix's inital automated API testing framework while working on a scrum team. In 2020 I became a full-stack developer and have designed and coded multiple features using .NET in Publix's inventory system.",
+          "I started at Publix as a retail associate in the store, mainly working in the grocery department while attending Polk State College for Bussiness IT. At PSC I had classes in Java, web development, and database design. I finished up my degree working at Publix's Information Systems help desk where I had the chance to write some scripts in PowerShell that made my job easier. In 2019 I moved over to development as a SQA analyst, mainly focusing on automated testing using C#, Selenium, Appium, and Publix's inital automated API testing framework while working on a scrum team. In 2020 I started work as a Software Engineer and helped deliver the first couple versions of Publix's new inventory system.",
       },
       {
         heading: "What I'm Up To",
         description:
-          "I'm current working at ProbablyMonsters, a new independent game company based out of Bellevue, Washington. I've switched from Unity to Unreal recently and I'm hoping to show off a new game later this year.",
+          "I'm current working at ProbablyMonsters, a new independent game company based out of Bellevue, Washington. I recently completed my first game with Unity and published it on Itch. I'm learning C++ so that I can move over to Unreal but in the mean time I hope to put out a few more Unity games. Check out the game I made below!",
       },
     ],
   }),

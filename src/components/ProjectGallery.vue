@@ -1,5 +1,7 @@
 <template>
+
   <v-container>
+
     <v-row class="text-center mt-15">
       <v-col class="mb-4" justify="center">
         <h1 class="display-3 font-weight-bold mb-3">Project Gallery</h1>
@@ -8,25 +10,34 @@
         </p>
       </v-col>
     </v-row>
-    <template v-for="project in projects">
-      <v-row class="text-center" justify="center" :key="project">
-        <h1 class="display-1 font-weight-bold mb-3">
-          {{ project.name }}
-        </h1>
-      </v-row>
-      <v-row justify="center my-8" :key="project">
-        <template v-for="language in project.languageIcons">
-          <div :key="language">
-            <v-icon :class="language" x-large></v-icon>
-          </div>
-        </template>
-      </v-row>
 
-      <v-row justify="center my-5 mx-1 text-center" :key="project">
-        <p class="subheading font-weight-regular">
-          {{ project.description }}
-        </p>
+    <v-row justify="center my-5">
+        <iframe frameborder="0" src="https://itch.io/embed/1686671" width="552" height="167"><a href="https://andrewettensohn.itch.io/fell-deeds">Fell Deeds by Fell Games</a></iframe>
+    </v-row>
+
+    <template v-for="project in projects">
+
+      <v-row class="text-center my-8" justify="center" :key="project">
+
+        <v-card elevation="2" :key="project" shaped tile max-width="374">
+          <v-card-title justify="text-center">{{ project.name }}</v-card-title>
+
+          <v-row justify="center" :key="project">
+            <template v-for="language in project.languageIcons">
+              <div :key="language">
+                <v-icon :class="language" x-large></v-icon>
+              </div>
+            </template>
+          </v-row>
+
+          <v-row justify="my-5 mx-1" :key="project">
+             <v-card-text class="subheading font-weight-regular">
+               {{ project.description }}
+             </v-card-text>
+          </v-row>
+        </v-card>
       </v-row>
+      
 
       <v-row
         class="text-center my-10"
@@ -73,7 +84,14 @@ export default {
   data: () => ({
     projects: [
       {
-        name: "Portfolio Site Vue.js",
+        name: "Fell Deeds - Unity Game",
+        description: "The first game I published is a fast action platformer called Fell Deeds. I originally started making the game in January 2022 and completed it in June. I realized that I didn't like what I had so I forked the code base and started over. I finally completed the game in September with seven levels, sound effects, plenty of enemies, bosses, and traps! Check it out on Itch!",
+        hasDesktopGallery: false,
+        hasMobileGallery: false,
+        languageIcons: ["devicon-csharp-plain"],
+      },
+      {
+        name: "Portfolio Site - Vue.js",
         description:
           "The site you're looking at uses Vue.js, Vue Router, and Vuetify.",
         languageIcons: ["devicon-vuejs-plain"],
@@ -81,7 +99,7 @@ export default {
         hasMobileGallery: false,
       },
       {
-        name: "Hacker News Blazor WASM",
+        name: "Hacker News - Blazor WASM",
         description:
           "This app uses Y Combinator's Hacker News API to display top stories and comments, the app also allows the user to save articles and features a dark and light theme. By the time I made this app I had already made multiple tools for my team using Blazor. Blazor feels like not just the future of .NET but of web development in general.Not having to mess with JavaScript can make the code in your app much cleanier and component based frontends using only C# feel great. I experimented a lot in this project with the theme changing, using Blazorise, and using the browser's local storage.",
         languageIcons: ["devicon-csharp-plain"],
@@ -120,7 +138,7 @@ export default {
         ],
       },
       {
-        name: "Hacker News Xamarin Forms Android",
+        name: "Hacker News - Xamarin Android",
         description:
           "This app shares the same features as Blazor News minus the theme changing. I started learning Xamarin in July of 2020 along with the MVVM design pattern. ProgrammerNews is my first MVVM Android app, it makes use of the Hacker News API to display 500 of the top user sumbitted stories from the site. The app also allows users to save stories and features endless scrolling, loading 15 stories at a time.",
         languageIcons: ["devicon-csharp-plain", "devicon-android-plain"],
@@ -145,7 +163,7 @@ export default {
         ],
       },
       {
-        name: "Endevrian ASP NET Core",
+        name: "Endevrian - ASP NET Core",
         description:
           "Endevrian combined all of the knowledge I had gained in the past 9 months about .NET. Taking the lessons I had learned from KanbanLite, I focused more on improving my understanding of MVC and web apps Endevrian uses EF Core, Identity Core, SQLite, and Azure Blob Storage. Endevrian also meets the installable requirement of a Progressive Web App and can be installed as an app on mobile and desktop operating systems. Endevrian allowed me to combine my love of Dungeons and Dragons with my love for programming. Endevrian helps a game master run their campaign by offering a place to store session notes (similar to One Note), a wiki, map gallery, and a blog.",
         languageIcons: [
@@ -194,7 +212,7 @@ export default {
         ],
       },
       {
-        name: "KanbanLite ASP NET Core",
+        name: "KanbanLite - ASP NET Core",
         description:
           "My first ASP.NET Core MVC project. This project took me about 3 months to create, working on it in some part almost everyday. Through working on this project I had experience with Entity Framework Core, MSSQL Server, Identity Core, and deployments with Azure Web Apps. After completing KanbanLite I felt much more confident with the MVC design pattern. This application allows the user to create a project and assign tasks to the project in addition to subtasks. KanbanLite also offers a story view that displays the history of a project such as when a task is completed.",
         languageIcons: [
