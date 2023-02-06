@@ -16,7 +16,7 @@
 
     <v-row justify="center">
       <v-img
-        :src="require('../assets/munich.jpg')"
+        :src="require('../assets/me.jpg')"
         class="my-3 mr-3 portrait"
       />
     </v-row>
