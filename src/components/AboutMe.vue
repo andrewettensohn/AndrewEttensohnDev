@@ -4,7 +4,7 @@
       <v-col>
         <h2 class="headline font-weight-bold mb-3">Welcome to my Portfolio!</h2>
         <h1 class="display-1">Andrew Ettensohn</h1>
-        <p>Full Stack Developer/Game Dev</p>
+        <p>Full Stack Developer</p>
       </v-col>
     </v-row>
 
@@ -35,12 +35,6 @@
 
     <v-row justify="start">
       <v-col class="mb-4" cols="12" md="8">
-          <iframe frameborder="0" src="https://itch.io/embed/1686671" width="552" height="167"><a href="https://andrewettensohn.itch.io/fell-deeds">Fell Deeds by Fell Games</a></iframe>
-      </v-col>
-    </v-row>
-
-    <v-row justify="start">
-      <v-col class="mb-4" cols="12" md="8">
         <a
           class="mr-3"
           href="https://www.linkedin.com/in/andrew-ettensohn-685721187"
@@ -68,7 +62,7 @@ export default {
       {
         heading: "About Me",
         description:
-          "Thank you for taking a look at my portfolio app! I’m very passionate about programming and I love having the chance to show off my projects and skills. Programming is a huge part of my life, it’s not just my job, I’ve been afflicted with a condition that gives me happiness from programming so I usually find myself coding projects for fun.",
+          "Thank you for taking a look at my portfolio app! I’m very passionate about programming and I love having the chance to show off my projects. Programming is a huge part of my life, it’s not just my job, I’ve been afflicted with a condition that gives me happiness from programming so I usually find myself coding projects for fun.",
       },
       {
         heading: "Where I've Been",
@@ -78,7 +72,7 @@ export default {
       {
         heading: "What I'm Up To",
         description:
-          "I'm current working at ProbablyMonsters, a new independent game company based out of Bellevue, Washington. I recently completed my first game with Unity and published it on Itch. I'm learning C++ so that I can move over to Unreal but in the mean time I hope to put out a few more Unity games. Check out the game I made below!",
+          "I'm currently working at ProbablyMonsters, a new independent game company based out of Bellevue, Washington. I've been learning about how the game industry works and how to do DevOps properly. More about this when we release our first game!",
       },
     ],
   }),

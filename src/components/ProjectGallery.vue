@@ -11,10 +11,6 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center my-5">
-        <iframe frameborder="0" src="https://itch.io/embed/1686671" width="552" height="167"><a href="https://andrewettensohn.itch.io/fell-deeds">Fell Deeds by Fell Games</a></iframe>
-    </v-row>
-
     <template v-for="project in projects">
 
       <v-row class="text-center my-8" justify="center" :key="project">
